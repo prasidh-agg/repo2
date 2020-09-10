@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>Flexbox</title>
+	<style>
+		body{
+			background-color: #8F6A6A;
+		}
+
+		.container-1 div,.container-2 div{
+			border: 1px solid grey;
+			border-radius: 7px;
+			padding: 20px;
+			margin-top: 30px;
+			margin-bottom: 50px;
+			background-color: #fff;
+		}
+
+		.container-1{
+			display: flex;
+			justify-content: space-evenly;
+		}
+
+		
+		.container-2-box{
+			box-sizing: border-box;
+					
+		}
+		.main-bar{
+			
+			order: 2;
+			flex: 2;
+		}
+		.side-bar-1{
+			
+			order: 1;
+			flex: 1;
+		}
+		.side-bar-2{
+			
+			order: 3;
+			flex: 1;
+			
+		}
+		@media (min-width: 900px){
+			.container-2{
+				display: flex;
+				justify-content: space-around;
+			}
+		}
+
+		h2{
+			text-align: center;
+		}
+
+		.header-nav{
+
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		.info{
+			
+			margin: 0 10px;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container-1">
+		<div class="header-tag">
+			<h1>Mobile Web Page</h1>
+		</div>
+		<div class="header-nav">
+			<p class="info">Contact</p>
+			<p class="info">Sign up</p>
+		</div>
+	</div><!-- end container-1 -->
+
+	<div class="container-2">
+		<div class="main-bar container-2-box">
+			<h2>Main Bar</h2>
+			<p>Sunt minim sed ut commodo magna exercitation in amet in ut. Ut do in mollit reprehenderit incididunt non eu culpa velit dolor dolor dolor mollit excepteur velit. Consectetur ad dolore sit laborum dolor officia amet non non nulla pariatur reprehenderit ut in pariatur. </p>
+			<p>Incididunt consequat sunt aute commodo velit cillum sed laborum. Enim tempor culpa duis ut amet sed commodo voluptate commodo in cupidatat. Laborum non irure do aliqua occaecat magna magna qui in ea. Lorem ipsum commodo in voluptate exercitation in et reprehenderit eiusmod enim dolore exercitation labore aliquip. Qui excepteur veniam elit ea laborum eiusmod labore est irure minim adipisicing ut sunt dolore in.</p>
+		</div>
+		<div class="side-bar-1 container-2-box">
+			<h2>Side Bar</h2>
+			<p>Lorem ipsum labore commodo eiusmod non magna deserunt minim aute pariatur minim labore minim eiusmod aliqua sint aliquip eu est. Sunt sed velit ut quis irure non irure consectetur eu et labore culpa. Aute aliquip proident incididunt laboris nisi dolor laborum laboris et est. Proident eu exercitation laboris ut ullamco dolor sed mollit quis in dolor velit veniam irure aliqua eu sint.</p>
+		</div>
+		<div class="side-bar-2 container-2-box">
+			<h2>Side Bar</h2>
+			<p>Lorem ipsum labore commodo eiusmod non magna deserunt minim aute pariatur minim labore minim eiusmod aliqua sint aliquip eu est. Sunt sed velit ut quis irure non irure consectetur eu et labore culpa. Aute aliquip proident incididunt laboris nisi dolor laborum laboris et est. Proident eu exercitation laboris ut ullamco dolor sed mollit quis in dolor velit veniam irure aliqua eu sint.</p>
+		</div>
+	</div><!-- end container-2 -->
+</body>
+</html>
